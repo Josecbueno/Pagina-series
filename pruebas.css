@@ -1,0 +1,95 @@
+/* Fondo general de la página */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #ffffff;
+    background: radial-gradient(circle at top, #1b1b3a, #000000);
+}
+
+/* Título */
+header h1 {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* BARRA DE NAVEGACIÓN TIPO CRISTAL */
+nav {
+    position: sticky;          /* Se queda arriba al hacer scroll (puedes quitarlo si no lo quieres) */
+    top: 0;
+    z-index: 10;
+
+    margin: 0 auto 30px auto;
+    padding: 10px 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    /* Efecto cristal */
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Enlaces del menú */
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 6px 12px;
+
+    transition: 
+        transform 0.25s ease,
+        color 0.25s ease,
+        text-shadow 0.25s ease;
+}
+
+/* Línea animada debajo del enlace */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ffb703;       /* Color de la línea (amarillo/naranja) */
+    transform: translateX(-50%);
+    transition: width 0.25s ease;
+}
+
+/* Efecto al pasar el ratón: sube un poco, cambia color y aparece la línea */
+nav a:hover {
+    transform: translateY(-3px);
+    color: #ffb703;
+    text-shadow: 0 0 8px rgba(255, 183, 3, 0.7);
+}
+
+nav a:hover::after {
+    width: 80%;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 0 15px 30px 15px;
+}
+
+/* Para que las imágenes no se salgan */
+img, video, audio {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer centrado */
+footer {
+    text-align: center;
+    padding: 20px 10px 30px 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
