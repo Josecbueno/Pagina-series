@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Series de animación</title>
     <link rel="shortcut icon" href="/imagenes/favicon.ico" >
-    <link rel="stylesheet" href="prueva1.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div id="principal">
@@ -14,7 +14,7 @@
     </header>
 
     <nav class="barra_inicio">
-        <a href="index.html">Inicio</a> <a href="valora.html">Valora</a> <a href="acerca-de-nosotros.html">Acerca de nosotros</a> <a href="#rick">Rick y Morty</a> <a href="#simpson">Los Simpson</a> <a href="#falls">Gravity Falls</a> </p>
+        <a href="index.html">Inicio</a> <a href="valora.html">Valora</a> <a href="acerca-de-nosotros.html">Acerca de nosotros</a> <a href="#rick">Rick y Morty</a> <a href="#simpson">Los Simpson</a> <a href="#falls">Gravity Falls</a> 
     </nav>
 
     <main>
@@ -27,7 +27,7 @@
                 <img src="imagenes/temp1.png" alt="Rick y Morty Temporada 1">
                 <figcaption>Temporada 1 de Rick y Morty </figcaption>
             </figure>
-            <p>Aqui os dejo el trailer de la primera temporada: <a href="https://www.youtube.com/watch?v=E8cXKMR9a1Q">Trailer</a></p>
+            <p id="trailer">Aqui os dejo el trailer de la primera temporada: <a href="https://www.youtube.com/watch?v=E8cXKMR9a1Q">Trailer</a></p>
             <h3>Capitulos temporada 1:</h3>
             <ol>
                 <li>Piloto</li>
@@ -75,7 +75,7 @@
             <h3>Cancion de opening: </h3>
             <audio src="multimedia/falls.mp3" controls></audio>
             <h3>Episodios y temporadas</h3>
-            <table border="1">
+            <table class="tabla_falls">
                 <thead>
                     <tr>
                         <th rowspan="2">Temporada</th>
@@ -86,6 +86,8 @@
                         <th>Comienzo</th>
                         <th>Final</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td colspan="2">Piloto</td>
                         <td colspan="2">3 de agosto de 2016</td>
@@ -102,8 +104,27 @@
                         <td>1 de agosto de 2014</td>
                         <td>15 de febrero de 2016</td>
                     </tr>
-                </thead>
+                </tbody>
             </table>
+        </article>
+        <article id="inazuma_article">
+            <h2 id="inazuma">Inazuma Eleven</h2>
+            <p>
+            Inazuma Eleven es una serie de anime que combina fútbol, aventura y técnicas especiales espectaculares. La historia sigue a Mark Evans (Endou Mamoru), un portero lleno de energía y optimismo que sueña con devolver la gloria al equipo de su escuela, el Raimon Eleven. A pesar de empezar como un club débil y poco motivado, Mark reúne a jugadores con talentos únicos, como el poderoso delantero Axel Blaze (Gouenji Shuuya), para formar un equipo capaz de enfrentarse a los mejores.
+            </p>
+            <figure>
+                <img src="imagenes/inazuma_img.png" alt="Inazuma">
+            </figure>
+            <h3>Cancion de opening: </h3>
+            <audio src="multimedia/inazuma.mp3" controls></audio>
+            <h3>Super tecnicas destacadas:</h3>
+            <figure id="inazuma_imagenes">
+                <img src="imagenes/tornado.png" alt="Inazuma">
+                <img src="imagenes/mano.png" alt="Inazuma">
+                <img src="imagenes/muro.png" alt="Inazuma">
+                <img src="imagenes/ventisca.png" alt="Inazuma">
+                <img src="imagenes/Big_bang.png" alt="Inazuma">
+            </figure>
         </article>
     </main>
     <footer>
@@ -111,6 +132,6 @@
         <p>Correo: mejores-series@gmail.com</p>
         <p>Telefono: 889-976-227</p>
     </footer>
-    </div>
+    </div> 
 </body>
 </html>

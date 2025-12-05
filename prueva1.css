@@ -12,8 +12,8 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  align-items: center;  /* centra verticalmente */
-  min-height: 100vh;    /* ocupa toda la altura de la pantalla */
+  align-items: center;  
+  min-height: 100vh;   
   margin: 0;
 }
 
