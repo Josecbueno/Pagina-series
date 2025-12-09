@@ -147,11 +147,6 @@ footer {
     opacity: 0.8;
 }
 
-@media (max-width: 800px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* CARRUSEL IMAGENES */
 
@@ -182,5 +177,12 @@ footer {
 #inazuma_imagenes img:nth-child(4) { animation-delay: 6s; }
 #inazuma_imagenes img:nth-child(5) { animation-delay: 8s; }
 
+
+
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
 
 
